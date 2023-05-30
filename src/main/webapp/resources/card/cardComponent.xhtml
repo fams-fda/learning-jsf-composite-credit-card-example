@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:ui="jakarta.faces.facelets" xmlns:cc="http://java.sun.com/jsf/composite"
+  xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui"
+  xmlns:card="http://java.sun.com/jsf/composite/card">
+
+<cc:interface name="cardComponent">
+  <cc:attribute name="card" required="false" type="pro.fams.entities.Card" />
+</cc:interface>
+
+<cc:implementation>
+  <card:cardSingle card="#{cc.attrs.card}" enableControls="true">
+  </card:cardSingle>
+</cc:implementation>
+
+</html>

@@ -1,0 +1,14 @@
+version: '3.4'
+
+volumes:
+  maven-repo:
+
+services:
+  card-webapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - maven-repo:/root/.m2:rw

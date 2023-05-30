@@ -1,0 +1,135 @@
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /*   background-color: black; */
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(120,9,121,0.9304096638655462) 45%, rgba(117,172,219,1) 70%, rgba(0,212,255,1) 100%);
+}
+
+.card-container {
+  width: 100%;
+  /* height: 100%; */
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /*   background-color: black; */
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(120,9,121,0.9304096638655462) 45%, rgba(117,172,219,1) 70%, rgba(0,212,255,1) 100%);
+
+/* Card */
+
+.credit-card {
+  width: 35rem;
+  min-width: 35rem;
+  height: 22.071261687rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
+  z-index: 1;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.credit-card-logo {
+  float: right;
+  padding: 10px;
+}
+
+.credit-card-logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.credit-card-info {
+  padding: 10px;
+  margin: 30px 0;
+}
+.credit-card-info .credit-card-chip-image {
+  width: 4rem;
+  height: 3rem;
+}
+
+.credit-card-info .credit-card-info-type {
+  font-size: 1.3em;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.credit-card-info .credit-card-info-number {
+  font-size: 2em;
+  padding: 10px 0 0 0;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.credit-card-client-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: #ffffff;
+}
+
+/* Credit Card Actions Group */
+
+.credit-card-actions-group {
+  margin-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  margin-right: 1rem;
+}
+
+.credit-card-actions-group > button {
+  margin-left: 0.5em;
+}
+
+.credit-card-actions-group .ui-button.rounded-button.ui-button-icon-only {
+  border-radius: 50%;
+  height: 3.5355em;
+  width: 3.5355rem;
+}
+/* Background Circle*/
+
+.circles {
+  position: absolute;
+  height: 270px;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-1 {
+  position: absolute;
+  top: -50px;
+  border-radius: 50%;
+  background: radial-gradient(#006db3, #29b6f6);
+  left: 10px;
+  height: 160px;
+  width: 160px;
+}
+.circle-2 {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#006db3, #29b6f6);
+  right: 40px;
+  top: 80px;
+  opacity: 0.8;
+  height: 160px;
+  width: 160px;
+}

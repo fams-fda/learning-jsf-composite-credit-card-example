@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:ui="jakarta.faces.facelets" xmlns:cc="http://java.sun.com/jsf/composite"
+  xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui"
+  xmlns:card="http://java.sun.com/jsf/composite/card">
+
+<cc:interface name="cardComponent">
+  <cc:attribute name="card" required="false" type="pro.fams.entities.Card" />
+  <cc:attribute name="enableControls" required="false" default="false"  />
+</cc:interface>
+
+<cc:implementation>
+
+  <section class="credit-card">
+    <div class="credit-card-logo">
+      <img src="assets/img/card/mastercard.png" alt="Credit Card logo" />
+    </div>
+    <div class="credit-card-info">
+      <p class="credit-card-info-type">
+        <h:outputText value="${cc.attrs.card.type}" />
+      </p>
+      <img class="credit-card-chip-image" src="assets/img/card/chip.png" alt="" />
+      <p class="credit-card-info-number">
+        <h:outputText value="${cc.attrs.card.number}" />
+      </p>
+    </div>
+    <div class="credit-card-client-info">
+      <p>
+        <h:outputText value="#{card.dueDate}" />
+      </p>
+      <p>
+        <h:outputText value="#{card.clientName}" />
+      </p>
+    </div>
+
+    <card:cardControls rendered="#{cc.attrs.enableControls}" card="#{cc.attrs.card}" />
+  </section>
+</cc:implementation>
+
+</html>
